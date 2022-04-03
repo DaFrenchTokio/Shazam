@@ -1,0 +1,1956 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Shazam = Instance.new("ScreenGui")
+local Client = Instance.new("Frame")
+local Title = Instance.new("Frame")
+local _Shazam = Instance.new("TextLabel")
+local _Close = Instance.new("TextButton")
+local Explorer = Instance.new("Frame")
+local Keys_Infos = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Themes = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Contraction = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Contractions = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local CrashGame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local configname = Instance.new("TextLabel")
+local click = Instance.new("TextButton")
+local FakeCrashGame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local configname_2 = Instance.new("TextLabel")
+local click_2 = Instance.new("TextButton")
+local Themes_2 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Theme1 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local configname_3 = Instance.new("TextLabel")
+local click_3 = Instance.new("TextButton")
+local Theme2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local configname_4 = Instance.new("TextLabel")
+local click_4 = Instance.new("TextButton")
+local Theme3 = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local configname_5 = Instance.new("TextLabel")
+local click_5 = Instance.new("TextButton")
+local Theme4 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local configname_6 = Instance.new("TextLabel")
+local click_6 = Instance.new("TextButton")
+local Theme5 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local configname_7 = Instance.new("TextLabel")
+local click_7 = Instance.new("TextButton")
+local Theme6 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local configname_8 = Instance.new("TextLabel")
+local click_8 = Instance.new("TextButton")
+local Theme7 = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local configname_9 = Instance.new("TextLabel")
+local click_9 = Instance.new("TextButton")
+local Config = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local AntiAbusegears = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local configpart = Instance.new("Frame")
+local value = Instance.new("TextButton")
+local configname_10 = Instance.new("TextLabel")
+local AntiGrayscale = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local configpart_2 = Instance.new("Frame")
+local value_2 = Instance.new("TextButton")
+local configname_11 = Instance.new("TextLabel")
+local AntiKill = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local configpart_3 = Instance.new("Frame")
+local value_3 = Instance.new("TextButton")
+local configname_12 = Instance.new("TextLabel")
+local AntiJail = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local configpart_4 = Instance.new("Frame")
+local value_4 = Instance.new("TextButton")
+local configname_13 = Instance.new("TextLabel")
+local AntiPads = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local configpart_5 = Instance.new("Frame")
+local value_5 = Instance.new("TextButton")
+local configname_14 = Instance.new("TextLabel")
+local AntiVampire = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local configpart_6 = Instance.new("Frame")
+local value_6 = Instance.new("TextButton")
+local configname_15 = Instance.new("TextLabel")
+local AntiVoid = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local configpart_7 = Instance.new("Frame")
+local value_7 = Instance.new("TextButton")
+local configname_16 = Instance.new("TextLabel")
+local AntiAttach = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local configpart_8 = Instance.new("Frame")
+local value_8 = Instance.new("TextButton")
+local configname_17 = Instance.new("TextLabel")
+local Perm = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local configpart_9 = Instance.new("Frame")
+local value_9 = Instance.new("TextButton")
+local configname_18 = Instance.new("TextLabel")
+local Anti2Pads = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local configpart_10 = Instance.new("Frame")
+local value_10 = Instance.new("TextButton")
+local configname_19 = Instance.new("TextLabel")
+local Admin = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local configpart_11 = Instance.new("Frame")
+local value_11 = Instance.new("TextButton")
+local configname_20 = Instance.new("TextLabel")
+local Kick = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local configpart_12 = Instance.new("Frame")
+local value_12 = Instance.new("TextButton")
+local configname_21 = Instance.new("TextLabel")
+local Join = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local configpart_13 = Instance.new("Frame")
+local value_13 = Instance.new("TextButton")
+local configname_22 = Instance.new("TextLabel")
+local Csystem = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local configpart_14 = Instance.new("Frame")
+local value_14 = Instance.new("TextButton")
+local configname_23 = Instance.new("TextLabel")
+local Logs = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local configpart_15 = Instance.new("Frame")
+local value_15 = Instance.new("TextButton")
+local configname_24 = Instance.new("TextLabel")
+local Keys = Instance.new("TextLabel")
+local UICorner_31 = Instance.new("UICorner")
+local Fly = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local prefixpart = Instance.new("Frame")
+local prefix = Instance.new("TextBox")
+local prefixtitle = Instance.new("TextLabel")
+local Respawn = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local prefixpart_2 = Instance.new("Frame")
+local prefix_2 = Instance.new("TextBox")
+local prefixtitle_2 = Instance.new("TextLabel")
+local Reset = Instance.new("Frame")
+local UICorner_34 = Instance.new("UICorner")
+local prefixpart_3 = Instance.new("Frame")
+local prefix_3 = Instance.new("TextBox")
+local prefixtitle_3 = Instance.new("TextLabel")
+local Pads = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local prefixpart_4 = Instance.new("Frame")
+local prefix_4 = Instance.new("TextBox")
+local prefixtitle_4 = Instance.new("TextLabel")
+local OpenGui = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local prefixpart_5 = Instance.new("Frame")
+local prefix_5 = Instance.new("TextBox")
+local prefixtitle_5 = Instance.new("TextLabel")
+local Config_2 = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+
+--Properties:
+
+Shazam.Name = "Shazam"
+Shazam.Parent = game.CoreGui
+Shazam.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Shazam.ResetOnSpawn = false
+
+Client.Name = "Client"
+Client.Parent = Shazam
+Client.Active = true
+Client.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Client.BorderSizePixel = 0
+Client.Position = UDim2.new(0.469969958, 0, 0.567726731, 0)
+Client.Selectable = true
+Client.Size = UDim2.new(0, 531, 0, 314)
+Client.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Client
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.00188158103, 0, -0.000705786049, 0)
+Title.Size = UDim2.new(0, 530, 0, 51)
+
+_Shazam.Name = "_Shazam"
+_Shazam.Parent = Title
+_Shazam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_Shazam.BackgroundTransparency = 1.000
+_Shazam.BorderSizePixel = 0
+_Shazam.Size = UDim2.new(0, 100, 0, 40)
+_Shazam.Font = Enum.Font.SourceSansSemibold
+_Shazam.Text = "Shazam"
+_Shazam.TextColor3 = Color3.fromRGB(255, 255, 255)
+_Shazam.TextSize = 25.000
+_Shazam.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+_Close.Name = "_Close"
+_Close.Parent = Title
+_Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_Close.BackgroundTransparency = 1.000
+_Close.BorderColor3 = Color3.fromRGB(255, 255, 255)
+_Close.Position = UDim2.new(0.909090936, 0, 0, 0)
+_Close.Size = UDim2.new(0, 50, 0, 40)
+_Close.Font = Enum.Font.SourceSans
+_Close.Text = "X"
+_Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+_Close.TextSize = 30.000
+_Close.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+_Close.TextStrokeTransparency = 0.000
+
+Explorer.Name = "Explorer"
+Explorer.Parent = Client
+Explorer.Active = true
+Explorer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Explorer.BorderColor3 = Color3.fromRGB(37, 255, 55)
+Explorer.BorderSizePixel = 0
+Explorer.Position = UDim2.new(0, 0, 0.1608347, 0)
+Explorer.Size = UDim2.new(0, 140, 0, 264)
+
+Keys_Infos.Name = "Keys_Infos"
+Keys_Infos.Parent = Explorer
+Keys_Infos.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Keys_Infos.Position = UDim2.new(0.0497512817, 0, 0.267234802, 0)
+Keys_Infos.Size = UDim2.new(0, 123, 0, 40)
+Keys_Infos.AutoButtonColor = false
+Keys_Infos.Font = Enum.Font.SourceSans
+Keys_Infos.Text = "Keys"
+Keys_Infos.TextColor3 = Color3.fromRGB(255, 255, 255)
+Keys_Infos.TextSize = 18.000
+Keys_Infos.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner.Parent = Keys_Infos
+
+Themes.Name = "Themes"
+Themes.Parent = Explorer
+Themes.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Themes.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Themes.Position = UDim2.new(0.0497512817, 0, 0.46723488, 0)
+Themes.Size = UDim2.new(0, 123, 0, 40)
+Themes.AutoButtonColor = false
+Themes.Font = Enum.Font.SourceSans
+Themes.Text = "Themes"
+Themes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Themes.TextSize = 18.000
+Themes.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_2.Parent = Themes
+
+Contraction.Name = "Contraction"
+Contraction.Parent = Explorer
+Contraction.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Contraction.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Contraction.Position = UDim2.new(0.0568941385, 0, 0.0727273226, 0)
+Contraction.Size = UDim2.new(0, 124, 0, 40)
+Contraction.AutoButtonColor = false
+Contraction.Font = Enum.Font.SourceSans
+Contraction.Text = "Contractions"
+Contraction.TextColor3 = Color3.fromRGB(255, 255, 255)
+Contraction.TextSize = 18.000
+Contraction.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_3.Parent = Contraction
+
+ScrollingFrame.Parent = Explorer
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.997832358, 0, 0, 0)
+ScrollingFrame.Size = UDim2.new(0, 389, 0, 264)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 25, 0)
+
+Contractions.Name = "Contractions"
+Contractions.Parent = ScrollingFrame
+Contractions.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Contractions.Position = UDim2.new(0.0320000015, 0, 0.00300000003, 0)
+Contractions.Size = UDim2.new(0, 364, 0, 40)
+Contractions.Visible = false
+Contractions.Font = Enum.Font.SourceSansItalic
+Contractions.Text = "Contractions"
+Contractions.TextColor3 = Color3.fromRGB(255, 255, 255)
+Contractions.TextSize = 25.000
+
+UICorner_4.Parent = Contractions
+
+CrashGame.Name = "CrashGame"
+CrashGame.Parent = Contractions
+CrashGame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CrashGame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CrashGame.BorderSizePixel = 0
+CrashGame.Position = UDim2.new(0.00839669257, 0, 1.57500005, 0)
+CrashGame.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_5.Parent = CrashGame
+
+configname.Name = "configname"
+configname.Parent = CrashGame
+configname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname.BackgroundTransparency = 1.000
+configname.Position = UDim2.new(0.170066595, 0, 0, 0)
+configname.Size = UDim2.new(0, 96, 0, 40)
+configname.Font = Enum.Font.SourceSans
+configname.Text = "Crash Game"
+configname.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname.TextSize = 20.000
+configname.TextXAlignment = Enum.TextXAlignment.Left
+
+click.Name = "click"
+click.Parent = CrashGame
+click.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click.BackgroundTransparency = 1.000
+click.Size = UDim2.new(0, 360, 0, 40)
+click.Font = Enum.Font.SourceSans
+click.Text = ""
+click.TextColor3 = Color3.fromRGB(0, 0, 0)
+click.TextSize = 1.000
+
+FakeCrashGame.Name = "FakeCrashGame"
+FakeCrashGame.Parent = Contractions
+FakeCrashGame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FakeCrashGame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FakeCrashGame.BorderSizePixel = 0
+FakeCrashGame.Position = UDim2.new(0.00800000038, 0, 2.9749999, 0)
+FakeCrashGame.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_6.Parent = FakeCrashGame
+
+configname_2.Name = "configname"
+configname_2.Parent = FakeCrashGame
+configname_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_2.BackgroundTransparency = 1.000
+configname_2.Position = UDim2.new(0.170066595, 0, 0, 0)
+configname_2.Size = UDim2.new(0, 96, 0, 40)
+configname_2.Font = Enum.Font.SourceSans
+configname_2.Text = "Fake Crash"
+configname_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_2.TextSize = 20.000
+configname_2.TextXAlignment = Enum.TextXAlignment.Left
+
+click_2.Name = "click"
+click_2.Parent = FakeCrashGame
+click_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_2.BackgroundTransparency = 1.000
+click_2.Size = UDim2.new(0, 360, 0, 40)
+click_2.Font = Enum.Font.SourceSans
+click_2.Text = ""
+click_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_2.TextSize = 1.000
+
+Themes_2.Name = "Themes"
+Themes_2.Parent = ScrollingFrame
+Themes_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Themes_2.Position = UDim2.new(0.0320000015, 0, 0.00300000003, 0)
+Themes_2.Size = UDim2.new(0, 364, 0, 40)
+Themes_2.Visible = false
+Themes_2.Font = Enum.Font.SourceSansItalic
+Themes_2.Text = "Themes"
+Themes_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Themes_2.TextSize = 25.000
+
+UICorner_7.Parent = Themes_2
+
+Theme1.Name = "Theme1"
+Theme1.Parent = Themes_2
+Theme1.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme1.BorderSizePixel = 0
+Theme1.Position = UDim2.new(0.00839669257, 0, 1.57500005, 0)
+Theme1.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_8.Parent = Theme1
+
+configname_3.Name = "configname"
+configname_3.Parent = Theme1
+configname_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_3.BackgroundTransparency = 1.000
+configname_3.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_3.Size = UDim2.new(0, 96, 0, 40)
+configname_3.Font = Enum.Font.SourceSans
+configname_3.Text = "Theme 1"
+configname_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_3.TextSize = 20.000
+configname_3.TextXAlignment = Enum.TextXAlignment.Left
+
+click_3.Name = "click"
+click_3.Parent = Theme1
+click_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_3.BackgroundTransparency = 1.000
+click_3.Size = UDim2.new(0, 360, 0, 40)
+click_3.Font = Enum.Font.SourceSans
+click_3.Text = ""
+click_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_3.TextSize = 1.000
+
+Theme2.Name = "Theme2"
+Theme2.Parent = Themes_2
+Theme2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme2.BorderSizePixel = 0
+Theme2.Position = UDim2.new(0.00800000038, 0, 2.9749999, 0)
+Theme2.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_9.Parent = Theme2
+
+configname_4.Name = "configname"
+configname_4.Parent = Theme2
+configname_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_4.BackgroundTransparency = 1.000
+configname_4.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_4.Size = UDim2.new(0, 96, 0, 40)
+configname_4.Font = Enum.Font.SourceSans
+configname_4.Text = "Theme 2"
+configname_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_4.TextSize = 20.000
+configname_4.TextXAlignment = Enum.TextXAlignment.Left
+
+click_4.Name = "click"
+click_4.Parent = Theme2
+click_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_4.BackgroundTransparency = 1.000
+click_4.Size = UDim2.new(0, 360, 0, 40)
+click_4.Font = Enum.Font.SourceSans
+click_4.Text = ""
+click_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_4.TextSize = 1.000
+
+Theme3.Name = "Theme3"
+Theme3.Parent = Themes_2
+Theme3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme3.BorderSizePixel = 0
+Theme3.Position = UDim2.new(0.00800000038, 0, 4.375, 0)
+Theme3.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_10.Parent = Theme3
+
+configname_5.Name = "configname"
+configname_5.Parent = Theme3
+configname_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_5.BackgroundTransparency = 1.000
+configname_5.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_5.Size = UDim2.new(0, 96, 0, 40)
+configname_5.Font = Enum.Font.SourceSans
+configname_5.Text = "Theme 3"
+configname_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_5.TextSize = 20.000
+configname_5.TextXAlignment = Enum.TextXAlignment.Left
+
+click_5.Name = "click"
+click_5.Parent = Theme3
+click_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_5.BackgroundTransparency = 1.000
+click_5.Size = UDim2.new(0, 360, 0, 40)
+click_5.Font = Enum.Font.SourceSans
+click_5.Text = ""
+click_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_5.TextSize = 1.000
+
+Theme4.Name = "Theme4"
+Theme4.Parent = Themes_2
+Theme4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme4.BorderSizePixel = 0
+Theme4.Position = UDim2.new(0.00800000038, 0, 5.7750001, 0)
+Theme4.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_11.Parent = Theme4
+
+configname_6.Name = "configname"
+configname_6.Parent = Theme4
+configname_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_6.BackgroundTransparency = 1.000
+configname_6.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_6.Size = UDim2.new(0, 96, 0, 40)
+configname_6.Font = Enum.Font.SourceSans
+configname_6.Text = "Theme 4"
+configname_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_6.TextSize = 20.000
+configname_6.TextXAlignment = Enum.TextXAlignment.Left
+
+click_6.Name = "click"
+click_6.Parent = Theme4
+click_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_6.BackgroundTransparency = 1.000
+click_6.Size = UDim2.new(0, 360, 0, 40)
+click_6.Font = Enum.Font.SourceSans
+click_6.Text = ""
+click_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_6.TextSize = 1.000
+
+Theme5.Name = "Theme5"
+Theme5.Parent = Themes_2
+Theme5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme5.BorderSizePixel = 0
+Theme5.Position = UDim2.new(0.00800000038, 0, 7.17500019, 0)
+Theme5.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_12.Parent = Theme5
+
+configname_7.Name = "configname"
+configname_7.Parent = Theme5
+configname_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_7.BackgroundTransparency = 1.000
+configname_7.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_7.Size = UDim2.new(0, 96, 0, 40)
+configname_7.Font = Enum.Font.SourceSans
+configname_7.Text = "Theme 5"
+configname_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_7.TextSize = 20.000
+configname_7.TextXAlignment = Enum.TextXAlignment.Left
+
+click_7.Name = "click"
+click_7.Parent = Theme5
+click_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_7.BackgroundTransparency = 1.000
+click_7.Size = UDim2.new(0, 360, 0, 40)
+click_7.Font = Enum.Font.SourceSans
+click_7.Text = ""
+click_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_7.TextSize = 1.000
+
+Theme6.Name = "Theme6"
+Theme6.Parent = Themes_2
+Theme6.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme6.BorderSizePixel = 0
+Theme6.Position = UDim2.new(0.00800000038, 0, 8.52500057, 0)
+Theme6.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_13.Parent = Theme6
+
+configname_8.Name = "configname"
+configname_8.Parent = Theme6
+configname_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_8.BackgroundTransparency = 1.000
+configname_8.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_8.Size = UDim2.new(0, 96, 0, 40)
+configname_8.Font = Enum.Font.SourceSans
+configname_8.Text = "Theme 6"
+configname_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_8.TextSize = 20.000
+configname_8.TextXAlignment = Enum.TextXAlignment.Left
+
+click_8.Name = "click"
+click_8.Parent = Theme6
+click_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_8.BackgroundTransparency = 1.000
+click_8.Size = UDim2.new(0, 360, 0, 40)
+click_8.Font = Enum.Font.SourceSans
+click_8.Text = ""
+click_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_8.TextSize = 1.000
+
+Theme7.Name = "Theme7"
+Theme7.Parent = Themes_2
+Theme7.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Theme7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Theme7.BorderSizePixel = 0
+Theme7.Position = UDim2.new(0.00800000038, 0, 9.92500019, 0)
+Theme7.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_14.Parent = Theme7
+
+configname_9.Name = "configname"
+configname_9.Parent = Theme7
+configname_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_9.BackgroundTransparency = 1.000
+configname_9.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_9.Size = UDim2.new(0, 96, 0, 40)
+configname_9.Font = Enum.Font.SourceSans
+configname_9.Text = "Theme 7"
+configname_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_9.TextSize = 20.000
+configname_9.TextXAlignment = Enum.TextXAlignment.Left
+
+click_9.Name = "click"
+click_9.Parent = Theme7
+click_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+click_9.BackgroundTransparency = 1.000
+click_9.Size = UDim2.new(0, 360, 0, 40)
+click_9.Font = Enum.Font.SourceSans
+click_9.Text = ""
+click_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+click_9.TextSize = 1.000
+
+Config.Name = "Config"
+Config.Parent = ScrollingFrame
+Config.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Config.Position = UDim2.new(0.0315594114, 0, 0.00287182909, 0)
+Config.Size = UDim2.new(0, 364, 0, 40)
+Config.Visible = false
+Config.Font = Enum.Font.SourceSansItalic
+Config.Text = "Config"
+Config.TextColor3 = Color3.fromRGB(255, 255, 255)
+Config.TextSize = 25.000
+
+UICorner_15.Parent = Config
+
+AntiAbusegears.Name = "Anti Abusegears"
+AntiAbusegears.Parent = Config
+AntiAbusegears.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiAbusegears.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiAbusegears.BorderSizePixel = 0
+AntiAbusegears.Position = UDim2.new(0.00290218811, 0, 2.59999943, 0)
+AntiAbusegears.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_16.Parent = AntiAbusegears
+
+configpart.Name = "configpart"
+configpart.Parent = AntiAbusegears
+configpart.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart.Size = UDim2.new(0, 50, 0, 40)
+
+value.Name = "value"
+value.Parent = configpart
+value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value.BackgroundTransparency = 1.000
+value.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value.Size = UDim2.new(0, 50, 0, 39)
+value.Font = Enum.Font.SourceSans
+value.Text = "On"
+value.TextColor3 = Color3.fromRGB(255, 255, 255)
+value.TextSize = 30.000
+
+configname_10.Name = "configname"
+configname_10.Parent = AntiAbusegears
+configname_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_10.BackgroundTransparency = 1.000
+configname_10.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_10.Size = UDim2.new(0, 96, 0, 40)
+configname_10.Font = Enum.Font.SourceSans
+configname_10.Text = "Anti Abusegears"
+configname_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_10.TextSize = 20.000
+configname_10.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiGrayscale.Name = "Anti Grayscale"
+AntiGrayscale.Parent = Config
+AntiGrayscale.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiGrayscale.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiGrayscale.BorderSizePixel = 0
+AntiGrayscale.Position = UDim2.new(0.00290218811, 0, 3.99999928, 0)
+AntiGrayscale.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_17.Parent = AntiGrayscale
+
+configpart_2.Name = "configpart"
+configpart_2.Parent = AntiGrayscale
+configpart_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_2.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_2.Size = UDim2.new(0, 50, 0, 40)
+
+value_2.Name = "value"
+value_2.Parent = configpart_2
+value_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_2.BackgroundTransparency = 1.000
+value_2.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_2.Size = UDim2.new(0, 50, 0, 39)
+value_2.Font = Enum.Font.SourceSans
+value_2.Text = "On"
+value_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_2.TextSize = 30.000
+
+configname_11.Name = "configname"
+configname_11.Parent = AntiGrayscale
+configname_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_11.BackgroundTransparency = 1.000
+configname_11.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_11.Size = UDim2.new(0, 96, 0, 40)
+configname_11.Font = Enum.Font.SourceSans
+configname_11.Text = "Anti Grayscale"
+configname_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_11.TextSize = 20.000
+configname_11.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiKill.Name = "Anti Kill"
+AntiKill.Parent = Config
+AntiKill.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiKill.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiKill.BorderSizePixel = 0
+AntiKill.Position = UDim2.new(0.00290218811, 0, 5.34999943, 0)
+AntiKill.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_18.Parent = AntiKill
+
+configpart_3.Name = "configpart"
+configpart_3.Parent = AntiKill
+configpart_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_3.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_3.Size = UDim2.new(0, 50, 0, 40)
+
+value_3.Name = "value"
+value_3.Parent = configpart_3
+value_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_3.BackgroundTransparency = 1.000
+value_3.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_3.Size = UDim2.new(0, 50, 0, 39)
+value_3.Font = Enum.Font.SourceSans
+value_3.Text = "Off"
+value_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_3.TextSize = 30.000
+
+configname_12.Name = "configname"
+configname_12.Parent = AntiKill
+configname_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_12.BackgroundTransparency = 1.000
+configname_12.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_12.Size = UDim2.new(0, 96, 0, 40)
+configname_12.Font = Enum.Font.SourceSans
+configname_12.Text = "Anti Kill"
+configname_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_12.TextSize = 20.000
+configname_12.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiJail.Name = "Anti Jail"
+AntiJail.Parent = Config
+AntiJail.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiJail.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiJail.BorderSizePixel = 0
+AntiJail.Position = UDim2.new(0.00290218811, 0, 6.67499924, 0)
+AntiJail.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_19.Parent = AntiJail
+
+configpart_4.Name = "configpart"
+configpart_4.Parent = AntiJail
+configpart_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_4.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_4.Size = UDim2.new(0, 50, 0, 40)
+
+value_4.Name = "value"
+value_4.Parent = configpart_4
+value_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_4.BackgroundTransparency = 1.000
+value_4.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_4.Size = UDim2.new(0, 50, 0, 39)
+value_4.Font = Enum.Font.SourceSans
+value_4.Text = "Off"
+value_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_4.TextSize = 30.000
+
+configname_13.Name = "configname"
+configname_13.Parent = AntiJail
+configname_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_13.BackgroundTransparency = 1.000
+configname_13.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_13.Size = UDim2.new(0, 96, 0, 40)
+configname_13.Font = Enum.Font.SourceSans
+configname_13.Text = "Anti Jail"
+configname_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_13.TextSize = 20.000
+configname_13.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiPads.Name = "Anti Pads"
+AntiPads.Parent = Config
+AntiPads.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiPads.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiPads.BorderSizePixel = 0
+AntiPads.Position = UDim2.new(0.00290218811, 0, 8.05000019, 0)
+AntiPads.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_20.Parent = AntiPads
+
+configpart_5.Name = "configpart"
+configpart_5.Parent = AntiPads
+configpart_5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_5.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_5.Size = UDim2.new(0, 50, 0, 40)
+
+value_5.Name = "value"
+value_5.Parent = configpart_5
+value_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_5.BackgroundTransparency = 1.000
+value_5.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_5.Size = UDim2.new(0, 50, 0, 39)
+value_5.Font = Enum.Font.SourceSans
+value_5.Text = "On"
+value_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_5.TextSize = 30.000
+
+configname_14.Name = "configname"
+configname_14.Parent = AntiPads
+configname_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_14.BackgroundTransparency = 1.000
+configname_14.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_14.Size = UDim2.new(0, 96, 0, 40)
+configname_14.Font = Enum.Font.SourceSans
+configname_14.Text = "Anti Pads"
+configname_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_14.TextSize = 20.000
+configname_14.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiVampire.Name = "Anti Vampire"
+AntiVampire.Parent = Config
+AntiVampire.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiVampire.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiVampire.BorderSizePixel = 0
+AntiVampire.Position = UDim2.new(0.00290218811, 0, 9.40000057, 0)
+AntiVampire.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_21.Parent = AntiVampire
+
+configpart_6.Name = "configpart"
+configpart_6.Parent = AntiVampire
+configpart_6.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_6.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_6.Size = UDim2.new(0, 50, 0, 40)
+
+value_6.Name = "value"
+value_6.Parent = configpart_6
+value_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_6.BackgroundTransparency = 1.000
+value_6.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_6.Size = UDim2.new(0, 50, 0, 39)
+value_6.Font = Enum.Font.SourceSans
+value_6.Text = "On"
+value_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_6.TextSize = 30.000
+
+configname_15.Name = "configname"
+configname_15.Parent = AntiVampire
+configname_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_15.BackgroundTransparency = 1.000
+configname_15.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_15.Size = UDim2.new(0, 96, 0, 40)
+configname_15.Font = Enum.Font.SourceSans
+configname_15.Text = "Anti Slow Vampire Crash"
+configname_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_15.TextSize = 20.000
+configname_15.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiVoid.Name = "Anti Void"
+AntiVoid.Parent = Config
+AntiVoid.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiVoid.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiVoid.BorderSizePixel = 0
+AntiVoid.Position = UDim2.new(0.00290218811, 0, 10.7750006, 0)
+AntiVoid.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_22.Parent = AntiVoid
+
+configpart_7.Name = "configpart"
+configpart_7.Parent = AntiVoid
+configpart_7.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_7.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_7.Size = UDim2.new(0, 50, 0, 40)
+
+value_7.Name = "value"
+value_7.Parent = configpart_7
+value_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_7.BackgroundTransparency = 1.000
+value_7.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_7.Size = UDim2.new(0, 50, 0, 39)
+value_7.Font = Enum.Font.SourceSans
+value_7.Text = "On"
+value_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_7.TextSize = 30.000
+
+configname_16.Name = "configname"
+configname_16.Parent = AntiVoid
+configname_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_16.BackgroundTransparency = 1.000
+configname_16.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_16.Size = UDim2.new(0, 96, 0, 40)
+configname_16.Font = Enum.Font.SourceSans
+configname_16.Text = "Anti Void"
+configname_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_16.TextSize = 20.000
+configname_16.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiAttach.Name = "Anti Attach"
+AntiAttach.Parent = Config
+AntiAttach.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AntiAttach.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AntiAttach.BorderSizePixel = 0
+AntiAttach.Position = UDim2.new(0.00290218811, 0, 12.0250006, 0)
+AntiAttach.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_23.Parent = AntiAttach
+
+configpart_8.Name = "configpart"
+configpart_8.Parent = AntiAttach
+configpart_8.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_8.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_8.Size = UDim2.new(0, 50, 0, 40)
+
+value_8.Name = "value"
+value_8.Parent = configpart_8
+value_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_8.BackgroundTransparency = 1.000
+value_8.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_8.Size = UDim2.new(0, 50, 0, 39)
+value_8.Font = Enum.Font.SourceSans
+value_8.Text = "Off"
+value_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_8.TextSize = 30.000
+
+configname_17.Name = "configname"
+configname_17.Parent = AntiAttach
+configname_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_17.BackgroundTransparency = 1.000
+configname_17.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_17.Size = UDim2.new(0, 96, 0, 40)
+configname_17.Font = Enum.Font.SourceSans
+configname_17.Text = "Anti Attach"
+configname_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_17.TextSize = 20.000
+configname_17.TextXAlignment = Enum.TextXAlignment.Left
+
+Perm.Name = "Perm"
+Perm.Parent = Config
+Perm.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Perm.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Perm.BorderSizePixel = 0
+Perm.Position = UDim2.new(-0.00259231776, 0, 1.27499986, 0)
+Perm.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_24.Parent = Perm
+
+configpart_9.Name = "configpart"
+configpart_9.Parent = Perm
+configpart_9.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_9.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_9.Size = UDim2.new(0, 50, 0, 40)
+
+value_9.Name = "value"
+value_9.Parent = configpart_9
+value_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_9.BackgroundTransparency = 1.000
+value_9.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_9.Size = UDim2.new(0, 50, 0, 39)
+value_9.Font = Enum.Font.SourceSans
+value_9.Text = "On"
+value_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_9.TextSize = 30.000
+
+configname_18.Name = "configname"
+configname_18.Parent = Perm
+configname_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_18.BackgroundTransparency = 1.000
+configname_18.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_18.Size = UDim2.new(0, 96, 0, 40)
+configname_18.Font = Enum.Font.SourceSans
+configname_18.Text = "Perm"
+configname_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_18.TextSize = 20.000
+configname_18.TextXAlignment = Enum.TextXAlignment.Left
+
+Anti2Pads.Name = "Anti2Pads"
+Anti2Pads.Parent = Config
+Anti2Pads.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Anti2Pads.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Anti2Pads.BorderSizePixel = 0
+Anti2Pads.Position = UDim2.new(0.00290218811, 0, 13.3500004, 0)
+Anti2Pads.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_25.Parent = Anti2Pads
+
+configpart_10.Name = "configpart"
+configpart_10.Parent = Anti2Pads
+configpart_10.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_10.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_10.Size = UDim2.new(0, 50, 0, 40)
+
+value_10.Name = "value"
+value_10.Parent = configpart_10
+value_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_10.BackgroundTransparency = 1.000
+value_10.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_10.Size = UDim2.new(0, 50, 0, 39)
+value_10.Font = Enum.Font.SourceSans
+value_10.Text = "Off"
+value_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_10.TextSize = 30.000
+
+configname_19.Name = "configname"
+configname_19.Parent = Anti2Pads
+configname_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_19.BackgroundTransparency = 1.000
+configname_19.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_19.Size = UDim2.new(0, 96, 0, 40)
+configname_19.Font = Enum.Font.SourceSans
+configname_19.Text = "Anti 2 Pads"
+configname_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_19.TextSize = 20.000
+configname_19.TextXAlignment = Enum.TextXAlignment.Left
+
+Admin.Name = "Admin"
+Admin.Parent = Config
+Admin.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Admin.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Admin.BorderSizePixel = 0
+Admin.Position = UDim2.new(0.00290218741, 0, 14.625, 0)
+Admin.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_26.Parent = Admin
+
+configpart_11.Name = "configpart"
+configpart_11.Parent = Admin
+configpart_11.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_11.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_11.Size = UDim2.new(0, 50, 0, 40)
+
+value_11.Name = "value"
+value_11.Parent = configpart_11
+value_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_11.BackgroundTransparency = 1.000
+value_11.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_11.Size = UDim2.new(0, 50, 0, 39)
+value_11.Font = Enum.Font.SourceSans
+value_11.Text = "Off"
+value_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_11.TextSize = 30.000
+
+configname_20.Name = "configname"
+configname_20.Parent = Admin
+configname_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_20.BackgroundTransparency = 1.000
+configname_20.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_20.Size = UDim2.new(0, 96, 0, 40)
+configname_20.Font = Enum.Font.SourceSans
+configname_20.Text = "All Players Admin"
+configname_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_20.TextSize = 20.000
+configname_20.TextXAlignment = Enum.TextXAlignment.Left
+
+Kick.Name = "Kick"
+Kick.Parent = Config
+Kick.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Kick.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Kick.BorderSizePixel = 0
+Kick.Position = UDim2.new(0.00290218741, 0, 16.0000019, 0)
+Kick.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_27.Parent = Kick
+
+configpart_12.Name = "configpart"
+configpart_12.Parent = Kick
+configpart_12.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_12.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_12.Size = UDim2.new(0, 50, 0, 40)
+
+value_12.Name = "value"
+value_12.Parent = configpart_12
+value_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_12.BackgroundTransparency = 1.000
+value_12.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_12.Size = UDim2.new(0, 50, 0, 39)
+value_12.Font = Enum.Font.SourceSans
+value_12.Text = "Off"
+value_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_12.TextSize = 30.000
+
+configname_21.Name = "configname"
+configname_21.Parent = Kick
+configname_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_21.BackgroundTransparency = 1.000
+configname_21.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_21.Size = UDim2.new(0, 96, 0, 40)
+configname_21.Font = Enum.Font.SourceSans
+configname_21.Text = "All Players Kicked"
+configname_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_21.TextSize = 20.000
+configname_21.TextXAlignment = Enum.TextXAlignment.Left
+
+Join.Name = "Join"
+Join.Parent = Config
+Join.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Join.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Join.BorderSizePixel = 0
+Join.Position = UDim2.new(0.00290218811, 0, 17.3250027, 0)
+Join.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_28.Parent = Join
+
+configpart_13.Name = "configpart"
+configpart_13.Parent = Join
+configpart_13.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_13.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_13.Size = UDim2.new(0, 50, 0, 40)
+
+value_13.Name = "value"
+value_13.Parent = configpart_13
+value_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_13.BackgroundTransparency = 1.000
+value_13.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_13.Size = UDim2.new(0, 50, 0, 39)
+value_13.Font = Enum.Font.SourceSans
+value_13.Text = "On"
+value_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_13.TextSize = 30.000
+
+configname_22.Name = "configname"
+configname_22.Parent = Join
+configname_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_22.BackgroundTransparency = 1.000
+configname_22.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_22.Size = UDim2.new(0, 96, 0, 40)
+configname_22.Font = Enum.Font.SourceSans
+configname_22.Text = "Notifications joins"
+configname_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_22.TextSize = 20.000
+configname_22.TextXAlignment = Enum.TextXAlignment.Left
+
+Csystem.Name = "Csystem"
+Csystem.Parent = Config
+Csystem.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Csystem.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Csystem.BorderSizePixel = 0
+Csystem.Position = UDim2.new(0.00290218811, 0, 18.6000023, 0)
+Csystem.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_29.Parent = Csystem
+
+configpart_14.Name = "configpart"
+configpart_14.Parent = Csystem
+configpart_14.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_14.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_14.Size = UDim2.new(0, 50, 0, 40)
+
+value_14.Name = "value"
+value_14.Parent = configpart_14
+value_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_14.BackgroundTransparency = 1.000
+value_14.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_14.Size = UDim2.new(0, 50, 0, 39)
+value_14.Font = Enum.Font.SourceSans
+value_14.Text = "On"
+value_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_14.TextSize = 30.000
+
+configname_23.Name = "configname"
+configname_23.Parent = Csystem
+configname_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_23.BackgroundTransparency = 1.000
+configname_23.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_23.Size = UDim2.new(0, 96, 0, 40)
+configname_23.Font = Enum.Font.SourceSans
+configname_23.Text = "Notifications /c system"
+configname_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_23.TextSize = 20.000
+configname_23.TextXAlignment = Enum.TextXAlignment.Left
+
+Logs.Name = "Logs"
+Logs.Parent = Config
+Logs.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Logs.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Logs.BorderSizePixel = 0
+Logs.Position = UDim2.new(0.00290218811, 0, 20.0250015, 0)
+Logs.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_30.Parent = Logs
+
+configpart_15.Name = "configpart"
+configpart_15.Parent = Logs
+configpart_15.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+configpart_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+configpart_15.Position = UDim2.new(0.746794939, 0, 0, 0)
+configpart_15.Size = UDim2.new(0, 50, 0, 40)
+
+value_15.Name = "value"
+value_15.Parent = configpart_15
+value_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+value_15.BackgroundTransparency = 1.000
+value_15.Position = UDim2.new(0, 0, 0.0250000004, 0)
+value_15.Size = UDim2.new(0, 50, 0, 39)
+value_15.Font = Enum.Font.SourceSans
+value_15.Text = "On"
+value_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+value_15.TextSize = 30.000
+
+configname_24.Name = "configname"
+configname_24.Parent = Logs
+configname_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configname_24.BackgroundTransparency = 1.000
+configname_24.Position = UDim2.new(0.051282052, 0, 0, 0)
+configname_24.Size = UDim2.new(0, 96, 0, 40)
+configname_24.Font = Enum.Font.SourceSans
+configname_24.Text = "Notifications logs"
+configname_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+configname_24.TextSize = 20.000
+configname_24.TextXAlignment = Enum.TextXAlignment.Left
+
+Keys.Name = "Keys"
+Keys.Parent = ScrollingFrame
+Keys.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keys.Position = UDim2.new(0.0320000015, 0, 0.00300000003, 0)
+Keys.Size = UDim2.new(0, 364, 0, 40)
+Keys.Visible = false
+Keys.Font = Enum.Font.SourceSansItalic
+Keys.Text = "Keys"
+Keys.TextColor3 = Color3.fromRGB(255, 255, 255)
+Keys.TextSize = 25.000
+
+UICorner_31.Parent = Keys
+
+Fly.Name = "Fly"
+Fly.Parent = Keys
+Fly.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Fly.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.00290218811, 0, 1.27499962, 0)
+Fly.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_32.Parent = Fly
+
+prefixpart.Name = "prefixpart"
+prefixpart.Parent = Fly
+prefixpart.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+prefixpart.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prefixpart.Position = UDim2.new(0.746794939, 0, 0, 0)
+prefixpart.Size = UDim2.new(0, 50, 0, 40)
+
+prefix.Name = "prefix"
+prefix.Parent = prefixpart
+prefix.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+prefix.BackgroundTransparency = 1.000
+prefix.Position = UDim2.new(-0.0116667151, 0, 0, 0)
+prefix.Size = UDim2.new(0, 50, 0, 40)
+prefix.Font = Enum.Font.SourceSans
+prefix.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+prefix.Text = "f"
+prefix.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefix.TextSize = 30.000
+
+prefixtitle.Name = "prefixtitle"
+prefixtitle.Parent = Fly
+prefixtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle.BackgroundTransparency = 1.000
+prefixtitle.Position = UDim2.new(0.0457571894, 0, 0, 0)
+prefixtitle.Size = UDim2.new(0, 96, 0, 40)
+prefixtitle.Font = Enum.Font.SourceSans
+prefixtitle.Text = "Fly"
+prefixtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle.TextSize = 20.000
+prefixtitle.TextXAlignment = Enum.TextXAlignment.Left
+
+Respawn.Name = "Respawn"
+Respawn.Parent = Keys
+Respawn.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Respawn.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Respawn.BorderSizePixel = 0
+Respawn.Position = UDim2.new(0.00290218811, 0, 2.57499957, 0)
+Respawn.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_33.Parent = Respawn
+
+prefixpart_2.Name = "prefixpart"
+prefixpart_2.Parent = Respawn
+prefixpart_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+prefixpart_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prefixpart_2.Position = UDim2.new(0.746794939, 0, 0, 0)
+prefixpart_2.Size = UDim2.new(0, 50, 0, 40)
+
+prefix_2.Name = "prefix"
+prefix_2.Parent = prefixpart_2
+prefix_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+prefix_2.BackgroundTransparency = 1.000
+prefix_2.Position = UDim2.new(-0.0116667151, 0, 0, 0)
+prefix_2.Size = UDim2.new(0, 50, 0, 40)
+prefix_2.Font = Enum.Font.SourceSans
+prefix_2.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+prefix_2.Text = "x"
+prefix_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefix_2.TextSize = 30.000
+
+prefixtitle_2.Name = "prefixtitle"
+prefixtitle_2.Parent = Respawn
+prefixtitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_2.BackgroundTransparency = 1.000
+prefixtitle_2.Position = UDim2.new(0.0457571894, 0, 0, 0)
+prefixtitle_2.Size = UDim2.new(0, 96, 0, 40)
+prefixtitle_2.Font = Enum.Font.SourceSans
+prefixtitle_2.Text = "Respawn"
+prefixtitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_2.TextSize = 20.000
+prefixtitle_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Reset.Name = "Reset"
+Reset.Parent = Keys
+Reset.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Reset.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Reset.BorderSizePixel = 0
+Reset.Position = UDim2.new(0.00564944092, 0, 3.97499943, 0)
+Reset.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_34.Parent = Reset
+
+prefixpart_3.Name = "prefixpart"
+prefixpart_3.Parent = Reset
+prefixpart_3.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+prefixpart_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prefixpart_3.Position = UDim2.new(0.746794939, 0, 0, 0)
+prefixpart_3.Size = UDim2.new(0, 50, 0, 40)
+
+prefix_3.Name = "prefix"
+prefix_3.Parent = prefixpart_3
+prefix_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+prefix_3.BackgroundTransparency = 1.000
+prefix_3.Position = UDim2.new(-0.0116667151, 0, 0, 0)
+prefix_3.Size = UDim2.new(0, 50, 0, 40)
+prefix_3.Font = Enum.Font.SourceSans
+prefix_3.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+prefix_3.Text = "c"
+prefix_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefix_3.TextSize = 30.000
+
+prefixtitle_3.Name = "prefixtitle"
+prefixtitle_3.Parent = Reset
+prefixtitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_3.BackgroundTransparency = 1.000
+prefixtitle_3.Position = UDim2.new(0.0457571894, 0, 0, 0)
+prefixtitle_3.Size = UDim2.new(0, 96, 0, 40)
+prefixtitle_3.Font = Enum.Font.SourceSans
+prefixtitle_3.Text = "Reset"
+prefixtitle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_3.TextSize = 20.000
+prefixtitle_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Pads.Name = "Pads"
+Pads.Parent = Keys
+Pads.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Pads.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Pads.BorderSizePixel = 0
+Pads.Position = UDim2.new(0.00564944092, 0, 5.32499933, 0)
+Pads.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_35.Parent = Pads
+
+prefixpart_4.Name = "prefixpart"
+prefixpart_4.Parent = Pads
+prefixpart_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+prefixpart_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prefixpart_4.Position = UDim2.new(0.746794939, 0, 0, 0)
+prefixpart_4.Size = UDim2.new(0, 50, 0, 40)
+
+prefix_4.Name = "prefix"
+prefix_4.Parent = prefixpart_4
+prefix_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+prefix_4.BackgroundTransparency = 1.000
+prefix_4.Position = UDim2.new(-0.0116667151, 0, 0, 0)
+prefix_4.Size = UDim2.new(0, 50, 0, 40)
+prefix_4.Font = Enum.Font.SourceSans
+prefix_4.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+prefix_4.Text = "v"
+prefix_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefix_4.TextSize = 30.000
+
+prefixtitle_4.Name = "prefixtitle"
+prefixtitle_4.Parent = Pads
+prefixtitle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_4.BackgroundTransparency = 1.000
+prefixtitle_4.Position = UDim2.new(0.0457571894, 0, 0, 0)
+prefixtitle_4.Size = UDim2.new(0, 96, 0, 40)
+prefixtitle_4.Font = Enum.Font.SourceSans
+prefixtitle_4.Text = "Tp To Pads"
+prefixtitle_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_4.TextSize = 20.000
+prefixtitle_4.TextXAlignment = Enum.TextXAlignment.Left
+
+OpenGui.Name = "OpenGui"
+OpenGui.Parent = Keys
+OpenGui.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+OpenGui.BorderColor3 = Color3.fromRGB(27, 42, 53)
+OpenGui.BorderSizePixel = 0
+OpenGui.Position = UDim2.new(0.00564944092, 0, 6.64999962, 0)
+OpenGui.Size = UDim2.new(0, 362, 0, 40)
+
+UICorner_36.Parent = OpenGui
+
+prefixpart_5.Name = "prefixpart"
+prefixpart_5.Parent = OpenGui
+prefixpart_5.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+prefixpart_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prefixpart_5.Position = UDim2.new(0.746794939, 0, 0, 0)
+prefixpart_5.Size = UDim2.new(0, 50, 0, 40)
+
+prefix_5.Name = "prefix"
+prefix_5.Parent = prefixpart_5
+prefix_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+prefix_5.BackgroundTransparency = 1.000
+prefix_5.Position = UDim2.new(-0.0116667151, 0, 0, 0)
+prefix_5.Size = UDim2.new(0, 50, 0, 40)
+prefix_5.Font = Enum.Font.SourceSans
+prefix_5.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+prefix_5.Text = "r"
+prefix_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefix_5.TextSize = 30.000
+
+prefixtitle_5.Name = "prefixtitle"
+prefixtitle_5.Parent = OpenGui
+prefixtitle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_5.BackgroundTransparency = 1.000
+prefixtitle_5.Position = UDim2.new(0.0457571894, 0, 0, 0)
+prefixtitle_5.Size = UDim2.new(0, 96, 0, 40)
+prefixtitle_5.Font = Enum.Font.SourceSans
+prefixtitle_5.Text = "Open Gui"
+prefixtitle_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+prefixtitle_5.TextSize = 20.000
+prefixtitle_5.TextXAlignment = Enum.TextXAlignment.Left
+
+Config_2.Name = "Config"
+Config_2.Parent = Explorer
+Config_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Config_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Config_2.Position = UDim2.new(0.0497512817, 0, 0.678787947, 0)
+Config_2.Size = UDim2.new(0, 123, 0, 40)
+Config_2.AutoButtonColor = false
+Config_2.Font = Enum.Font.SourceSans
+Config_2.Text = "Config"
+Config_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Config_2.TextSize = 18.000
+Config_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_37.Parent = Config_2
+
+-- Scripts:
+
+local function OJEVONM_fake_script() -- _Close._script 
+	local script = Instance.new('LocalScript', _Close)
+
+	local client = script.Parent.Parent.Parent.Parent.Client
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:TweenPosition(UDim2.new(0.25, 0, 1, 0))
+		repeat wait() until script.Parent.Parent.Parent:TweenPosition(UDim2.new(0.25, 0, 1, 0))
+		client.Visible = false
+	end)
+end
+coroutine.wrap(OJEVONM_fake_script)()
+local function GORRGTD_fake_script() -- Keys_Infos._script 
+	local script = Instance.new('LocalScript', Keys_Infos)
+
+	local visible_3 = script.Parent.Parent.ScrollingFrame.Keys
+	local visible_1 = script.Parent.Parent.ScrollingFrame.Contractions
+	local visible_2 = script.Parent.Parent.ScrollingFrame.Themes
+	local visible_4 = script.Parent.Parent.ScrollingFrame.Config
+	local object_1 = script.Parent.Parent.Keys_Infos
+	local object_2 = script.Parent.Parent.Themes
+	local object_3 = script.Parent.Parent.Contraction
+	local object_4 = script.Parent.Parent.Config
+	script.Parent.MouseButton1Click:Connect(function()
+		visible_1.Visible = false
+		visible_2.Visible = false
+		visible_3.Visible = true
+		visible_4.Visible = false
+		object_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		object_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	end)
+end
+coroutine.wrap(GORRGTD_fake_script)()
+local function FLREPL_fake_script() -- Themes._script 
+	local script = Instance.new('LocalScript', Themes)
+
+	local visible_3 = script.Parent.Parent.ScrollingFrame.Keys
+	local visible_1 = script.Parent.Parent.ScrollingFrame.Contractions
+	local visible_2 = script.Parent.Parent.ScrollingFrame.Themes
+	local visible_4 = script.Parent.Parent.ScrollingFrame.Config
+	local object_1 = script.Parent.Parent.Keys_Infos
+	local object_2 = script.Parent.Parent.Themes
+	local object_3 = script.Parent.Parent.Contraction
+	local object_4 = script.Parent.Parent.Config
+	script.Parent.MouseButton1Click:Connect(function()
+		visible_1.Visible = false
+		visible_2.Visible = true
+		visible_3.Visible = false
+		visible_4.Visible = false
+		object_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0) 
+		object_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	end)
+end
+coroutine.wrap(FLREPL_fake_script)()
+local function KJTZCWI_fake_script() -- Contraction._script 
+	local script = Instance.new('LocalScript', Contraction)
+
+	local visible_3 = script.Parent.Parent.ScrollingFrame.Keys
+	local visible_1 = script.Parent.Parent.ScrollingFrame.Contractions
+	local visible_2 = script.Parent.Parent.ScrollingFrame.Themes
+	local visible_4 = script.Parent.Parent.ScrollingFrame.Config
+	local object_1 = script.Parent.Parent.Keys_Infos
+	local object_2 = script.Parent.Parent.Themes
+	local object_3 = script.Parent.Parent.Contraction
+	local object_4 = script.Parent.Parent.Config
+	script.Parent.MouseButton1Click:Connect(function()
+		visible_1.Visible = true
+		visible_2.Visible = false
+		visible_3.Visible = false
+		visible_4.Visible = false
+		object_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		object_1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	end)
+end
+coroutine.wrap(KJTZCWI_fake_script)()
+local function FYOYKS_fake_script() -- click._script 
+	local script = Instance.new('LocalScript', click)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'crash')
+	end)
+end
+coroutine.wrap(FYOYKS_fake_script)()
+local function MZDZ_fake_script() -- click_2._script 
+	local script = Instance.new('LocalScript', click_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'ccrash')
+	end)
+end
+coroutine.wrap(MZDZ_fake_script)()
+local function TIBRU_fake_script() -- click_3._script 
+	local script = Instance.new('LocalScript', click_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 1')
+	end)
+end
+coroutine.wrap(TIBRU_fake_script)()
+local function HLMYVHV_fake_script() -- click_4._script 
+	local script = Instance.new('LocalScript', click_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 2')
+	end)
+end
+coroutine.wrap(HLMYVHV_fake_script)()
+local function PHPWW_fake_script() -- click_5._script 
+	local script = Instance.new('LocalScript', click_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 3')
+	end)
+end
+coroutine.wrap(PHPWW_fake_script)()
+local function VEYPN_fake_script() -- click_6._script 
+	local script = Instance.new('LocalScript', click_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 4')
+	end)
+end
+coroutine.wrap(VEYPN_fake_script)()
+local function DTEQU_fake_script() -- click_7._script 
+	local script = Instance.new('LocalScript', click_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 5')
+	end)
+end
+coroutine.wrap(DTEQU_fake_script)()
+local function DJVFX_fake_script() -- click_8._script 
+	local script = Instance.new('LocalScript', click_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 6')
+	end)
+end
+coroutine.wrap(DJVFX_fake_script)()
+local function VFAVGNJ_fake_script() -- click_9._script 
+	local script = Instance.new('LocalScript', click_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:Chat(prefix..'theme 7')
+	end)
+end
+coroutine.wrap(VFAVGNJ_fake_script)()
+local function FFBTIOM_fake_script() -- value._script 
+	local script = Instance.new('LocalScript', value)
+
+	local config = "antiabusegears"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(FFBTIOM_fake_script)()
+local function AMYIXV_fake_script() -- value_2._script 
+	local script = Instance.new('LocalScript', value_2)
+
+	local config = "antigrayscale"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(AMYIXV_fake_script)()
+local function HGYTJKP_fake_script() -- value_3._script 
+	local script = Instance.new('LocalScript', value_3)
+
+	local config = "antikill"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(HGYTJKP_fake_script)()
+local function NMAK_fake_script() -- value_4._script 
+	local script = Instance.new('LocalScript', value_4)
+
+	local config = "antijail"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(NMAK_fake_script)()
+local function MTEFG_fake_script() -- value_5._script 
+	local script = Instance.new('LocalScript', value_5)
+
+	local config = "antipads"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(MTEFG_fake_script)()
+local function LQSOGB_fake_script() -- value_6._script 
+	local script = Instance.new('LocalScript', value_6)
+
+	local config = "anticrashVG"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(LQSOGB_fake_script)()
+local function ICMHN_fake_script() -- value_7._script 
+	local script = Instance.new('LocalScript', value_7)
+
+	local config = "antivoid"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(ICMHN_fake_script)()
+local function UKILGXD_fake_script() -- value_8._script 
+	local script = Instance.new('LocalScript', value_8)
+
+	local config = "antiattach"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(UKILGXD_fake_script)()
+local function GJYAO_fake_script() -- value_9._script 
+	local script = Instance.new('LocalScript', value_9)
+
+	local config = "perm"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(GJYAO_fake_script)()
+local function ACOIOE_fake_script() -- value_10._script 
+	local script = Instance.new('LocalScript', value_10)
+
+	local config = "anti2pads"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(ACOIOE_fake_script)()
+local function DVIVX_fake_script() -- value_11._script 
+	local script = Instance.new('LocalScript', value_11)
+
+	local config = "players_perm"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(DVIVX_fake_script)()
+local function GCQTB_fake_script() -- value_12._script 
+	local script = Instance.new('LocalScript', value_12)
+
+	local config = "players_kick"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(GCQTB_fake_script)()
+local function TXVGIUZ_fake_script() -- value_13._script 
+	local script = Instance.new('LocalScript', value_13)
+
+	local config = "players_joined"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(TXVGIUZ_fake_script)()
+local function WTRU_fake_script() -- value_14._script 
+	local script = Instance.new('LocalScript', value_14)
+
+	local config = "players_csystem"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(WTRU_fake_script)()
+local function WFMTB_fake_script() -- value_15._script 
+	local script = Instance.new('LocalScript', value_15)
+
+	local config = "players_logs"
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Off" then
+			script.Parent.Text = "On"
+			game.Players:Chat('!config '..config)
+		else
+			script.Parent.Text = "Off"
+			game.Players:Chat('!config '..config)
+		end
+	end)
+end
+coroutine.wrap(WFMTB_fake_script)()
+local function JJDDNKZ_fake_script() -- Fly.prefix_script 
+	local script = Instance.new('LocalScript', Fly)
+
+	local prefixpart = script.Parent.prefixpart.prefix
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function()
+		prefix = prefixpart.Text
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(JJDDNKZ_fake_script)()
+local function NMNZY_fake_script() -- Respawn.prefix_script 
+	local script = Instance.new('LocalScript', Respawn)
+
+	local prefixpart = script.Parent.prefixpart.prefix
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function()
+		prefix = prefixpart.Text
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(NMNZY_fake_script)()
+local function FMDS_fake_script() -- Reset.prefix_script 
+	local script = Instance.new('LocalScript', Reset)
+
+	local prefixpart = script.Parent.prefixpart.prefix
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function()
+		prefix = prefixpart.Text
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(FMDS_fake_script)()
+local function JVTZNVH_fake_script() -- Pads.prefix_script 
+	local script = Instance.new('LocalScript', Pads)
+
+	local prefixpart = script.Parent.prefixpart.prefix
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function()
+		prefix = prefixpart.Text
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(JVTZNVH_fake_script)()
+local function ZRSL_fake_script() -- OpenGui.prefix_script 
+	local script = Instance.new('LocalScript', OpenGui)
+
+	local prefixpart = script.Parent.prefixpart.prefix
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function()
+		prefix = prefixpart.Text
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(ZRSL_fake_script)()
+local function EZZRIY_fake_script() -- Keys.keys_script 
+	local script = Instance.new('LocalScript', Keys)
+
+	local mousee = game.Players.LocalPlayer:GetMouse()
+	local shazam = script.Parent.Parent.Parent.Parent.Parent.Client
+	local RunService = game:GetService("RunService")
+	local opengui_key = script.Parent.OpenGui.prefixpart.prefix
+	local fly_key = script.Parent.Fly.prefixpart.prefix
+	local respawn_key = script.Parent.Respawn.prefixpart.prefix
+	local reset_key = script.Parent.Reset.prefixpart.prefix
+	local tppads_key = script.Parent.Pads.prefixpart.prefix
+	RunService.RenderStepped:Connect(function()
+		opengui_key = script.Parent.OpenGui.prefixpart.prefix
+		fly_key = script.Parent.Fly.prefixpart.prefix
+		respawn_key = script.Parent.Respawn.prefixpart.prefix
+		reset_key = script.Parent.Reset.prefixpart.prefix
+		tppads_key = script.Parent.Pads.prefixpart.prefix
+	end)
+	mousee.KeyDown:connect(function(key)
+		if key:lower() == opengui_key.Text then
+			shazam.Visible = true
+			script.Parent.Parent.Parent.Parent:TweenPosition(UDim2.new(0.25, 0, 0.119, 0))
+		end
+		if key:lower() == fly_key.Text then
+			game.Players:Chat("fly me")
+		end
+		if key:lower() == respawn_key.Text then
+			game.Players.LocalPlayer.Character:Destroy()
+		end
+		if key:lower() == reset_key.Text then
+			game.Players:Chat("reset me")
+		end
+		if key:lower() == tppads_key.Text then
+			game.Players:Chat("!goto pads")
+		end
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(EZZRIY_fake_script)()
+local function YCRWAVY_fake_script() -- Config_2._script 
+	local script = Instance.new('LocalScript', Config_2)
+
+	local visible_3 = script.Parent.Parent.ScrollingFrame.Keys
+	local visible_1 = script.Parent.Parent.ScrollingFrame.Contractions
+	local visible_2 = script.Parent.Parent.ScrollingFrame.Themes
+	local visible_4 = script.Parent.Parent.ScrollingFrame.Config
+	local object_1 = script.Parent.Parent.Keys_Infos
+	local object_2 = script.Parent.Parent.Themes
+	local object_3 = script.Parent.Parent.Contraction
+	local object_4 = script.Parent.Parent.Config
+	script.Parent.MouseButton1Click:Connect(function()
+		visible_1.Visible = false
+		visible_2.Visible = false
+		visible_3.Visible = false
+		visible_4.Visible = true
+		object_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		object_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	end)
+end
+coroutine.wrap(YCRWAVY_fake_script)()
